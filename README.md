@@ -102,7 +102,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/shomanabd/udacity-fullstack-javascript-storefront.git)
 cd storefront-backend
 ```
 
