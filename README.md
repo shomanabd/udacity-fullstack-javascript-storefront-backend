@@ -117,19 +117,17 @@ npm install
 Create a `.env` file in the root directory and add the following variables:
 
 ```env
-# Database Configuration
+# PostgreSQL Environment Variables
+POSTGRES_USER=<yourusername>
+POSTGRES_PASSWORD=<yourpassword>
+POSTGRES_DB=shopping
 POSTGRES_HOST=127.0.0.1
 POSTGRES_PORT=5433
-POSTGRES_DB=shopping
-POSTGRES_USER=<your-username>
-POSTGRES_PASSWORD=<your-password>
-
-# Encryption Settings
-BCRYPT_PASSWORD=<your-pepper-string>
+# Bcrypt Configuration
+BCRYPT_PASSWORD=<yourbcriptpassword>
 SALT_ROUNDS=10
-
-# JWT Settings
-TOKEN_SECRET=<your-jwt-secret-key>
+# JWT Token Secret
+TOKEN_SECRET=<yourtokensecret>
 ```
 
 **Note:** Make sure to use secure and strong values for sensitive variables like `BCRYPT_PASSWORD` and `TOKEN_SECRET`.
