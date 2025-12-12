@@ -6,8 +6,7 @@
   "scripts": {
     "migrate:create": "npx ts-node node_modules/db-migrate/bin/db-migrate create --ts",
     "start": "node dist/server",
-    "watch": "tsc-watch --esModuleInterop src/server.ts --outDir ./dist --onSuccess \"node ./dist/server.js\"",
-    "test": "jasmine-ts",
+    "watch": "tsc-watch --onSuccess \"node ./dist/server.js\"",
     "tsc": "tsc"
   },
   "author": "Udacity",
